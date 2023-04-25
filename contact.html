@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+   <div class="formcon">
+    <div class="container">
+        <div class="header">
+            <h2>Save Contact</h2>
+        </div>
+        <form class="form" id="form"  onsubmit="event.preventDefault();validate();">
+            <div class="form-control box" id="parent">
+                <label>Name</label>
+                <input type="text" name="" id="username" placeholder="Enter your first name" value=""   onkeyup=" usernamev();">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error Msg</small>
+            </div>
+
+            <div class="form-control box">
+                <label>E-mail</label>
+                <input type="text" name="" id="email" placeholder="Enter your E-mail"  onkeyup=" emailv();">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error Msg</small>
+            </div>
+            <div class="form-control box">
+                <label>Phone Number</label>
+                <input type="number" name="" id="phone" placeholder="Enter your phone number"  onkeyup="phonev();">
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error Msg</small>
+            </div>
+
+            <div class="form-control box">
+                <label for="">Whatsapp Number</label>
+                
+                <input type="number" name="" id="whatsapp" placeholder="Please enter your  whatsapp number"  onkeyup="whatsappv();">
+                
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small>Error Msg</small>
+            </div>
+
+            <div class="form-control box" style="display: flex;flex-direction: row;flex-wrap: nowrap;align-items: baseline;padding: 10px 300px 10px 0px;">
+                <label for="">Gender</label>
+                <input type="radio" id="male" name="gender" value="male" onclick="genderv();">Male</input>
+                <input type="radio" id="female" name="gender" value="female" onclick="genderv();">Female</input>
+                <i class="fa-solid fa-circle-check"></i>
+                <i class="fa-solid fa-circle-exclamation"></i>
+                <small style=" position: absolute; bottom: 0px; ">Error Msg</small>
+                
+            </div>
+
+            
+                <input type="submit" name="" id="submit" class="btn" value="Save Contact">
+            
+        </form>
+       
+    </div>
+   </div>
+
+    <script src="contact.js"></script>
+    <script src="sweetalert2.min.js"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    
+    <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   
+
+</body>
+</html>
